@@ -3,146 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Ferdous Ahmed</title>
-    <style>
-        /* PALETA DE COLORES Y BASE */
-        :root {
-            --dark: #0D1117;
-            --highlight: #E3FF6A;
-            --soft-gray: #8892B0;
-            --deep-blue: #1E293B;
-            --gradient: linear-gradient(135deg, #1E293B 0%, #0D1117 100%);
-        }
+    <title>Hero | Jordan Santander</title>
+    
+    <!-- Vinculación correcta -->
+    <link rel="stylesheet" href="./style.css">
 
-        body {
-            background-color: var(--dark);
-            color: white;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            line-height: 1.6;
-        }
-
-        /* DISEÑO DE SECCIONES */
-        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-        header { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; }
-        
-        .hero { text-align: center; padding: 60px 0; }
-        .hero h1 { font-size: 3.5rem; margin: 10px 0; }
-        .highlight-text { color: var(--highlight); }
-
-        .btn-primary {
-            background: var(--highlight);
-            color: var(--dark);
-            padding: 12px 30px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            display: inline-block;
-            text-transform: uppercase;
-            font-size: 0.8rem;
-        }
-
-        .profile-img-container {
-            width: 250px;
-            height: 250px;
-            background: var(--deep-blue);
-            border-radius: 50%;
-            margin: 40px auto;
-            border: 5px solid var(--deep-blue);
-            overflow: hidden;
-        }
-
-        /* GRILLA DE HABILIDADES */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 20px;
-            margin-top: 50px;
-        }
-
-        .skill-card {
-            background: rgba(255,255,255,0.05);
-            padding: 30px;
-            border-radius: 15px;
-            text-align: center;
-        }
-
-        .big-number { font-size: 5rem; color: var(--highlight); font-weight: bold; display: block; }
-
-        /* FORMULARIO */
-        .contact-box {
-            background: white;
-            color: var(--dark);
-            padding: 50px;
-            border-radius: 40px;
-            margin: 80px 0;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 15px;
-            margin: 10px 0;
-            background: #f0f0f0;
-            border: none;
-            border-radius: 10px;
-            box-sizing: border-box;
-        }
-    </style>
-    <link href="style.css" rel="stylesheet">
 </head>
-<body>
 
-    <div class="container">
-        <header>
-            <div style="font-weight: bold; font-size: 1.5rem;">FA<span class="highlight-text">.</span></div>
-            <nav style="font-size: 0.7rem; text-transform: uppercase; color: var(--soft-gray);">
-                ABOUT ME &nbsp;&nbsp; SKILLS &nbsp;&nbsp; PROJECTS
-            </nav>
-            <a href="#" class="btn-primary" style="background: transparent; border: 1px solid var(--highlight); color: var(--highlight);">Contact</a>
-        </header>
+<!-- COLOR BASE FONDO Y TEXTO ESTILO+COLOR -->
+ <!-- OVERFLOW ES PARA EL SCROLL LATERAL Y AJUSTAR LA PANTALLA -->
+ <!-- MIN-H-SCREEN ESTABLECE LA ALTURA MININA DE UN ELEMENTO  EN ESTE CASO LA PANTALLA -->
+<body class="bg-[#0D1117]
+ text-[#FFFFFF]
+ font-sans 
+ overflow-x-hidden 
+ min-h-screen">
 
-        <section class="hero">
-            <p>I'm <span class="highlight-text">Ferdous Ahmed</span></p>
-            <h1>Full Stack Developer</h1>
+    <!-- NAVBAR -->
+    <header class="max-w-7xl 
+        mx-auto 
+        flex 
+        justify-between 
+        items-center 
+        p-8">
+        
+        <div class="font-bold 
+        tracking-tighter 
+        text-xl">FUNVAL</div>
+        
+        <nav class="hidden 
+        md:flex 
+        gap-10 
+        text-[11px] 
+        font-bold 
+        tracking-[0.2em] 
+        text-[#8892B0]">
+
+            <a href="#" class="hover:text-white transition">SOBRE MI</a>
+            <a href="#" class="hover:text-white transition">HABILIDADES</a>
+            <a href="#" class="hover:text-white transition">PROYECTOS</a>
+        </nav>
+
+        <!-- BOTON DE CONTACTO -->
+        <button class="border 
+        border-[#E3FF6A] 
+        text-[#E3FF6A] px-6 py-2 
+        rounded-full text-[11px] 
+        font-bold 
+        tracking-widest 
+        flex items-center 
+        gap-3 
+        hover:bg-[#E3FF6A]
+        hover:text-black 
+        transition">CONTACTO<span class="bg-[#E3FF6A] 
+            text-black
+            rounded-full 
+            w-4 h-4 
+            flex 
+            items-center 
+            justify-center 
+            text-[10px]">↗</span>
+        </button>
+
+    </header>
+        <main class="relative 
+        max-w-7xl 
+        mx-auto 
+        flex 
+        flex-col 
+        items-center 
+        pt-16 px-4 
+        hero-bg">
+        
+        <!-- TÍTULOS: Ajustados en tamaño e interlineado -->
+        <div class="text-center mb-[-60px] z-10">
+            <h2 class="text-2xl md:text-4xl font-light tracking-tight text-white/90">
+                Soy <span class="text-[#E3FF6A] font-bold">Jordan Santander Phillips</span>
+            </h2>
+            <h1 class="text-5xl md:text-7xl font-bold mt-1 tracking-tight leading-[1.1] max-w-4xl mx-auto">
+                Front End Developer
+            </h1>
+        </div>
+
+        <!-- CONTENEDOR DE IMAGEN Y TARJETAS: Más ancho para separar las tarjetas -->
+        <div class="relative w-full max-w-6xl flex justify-center items-end min-h-[550px]">
             
-            <div class="profile-img-container">
-                <img src="https://placeholder.com" alt="Profile" style="width:100%; height:100%; object-fit:cover;">
-            </div>
-            <a href="#" class="btn-primary">My Projects</a>
-        </section>
+            <!-- RESPLANDOR DETRÁS DE LA FOTO (Efecto de la referencia) -->
+            <div class="absolute bottom-20 w-[500px] h-[500px] bg-[#E3FF6A]/5 rounded-full blur-[120px] z-0"></div>
 
-        <section style="text-align: center; margin-top: 100px;">
-            <h2 class="highlight-text">WHO AM I ?</h2>
-            <p style="color: var(--soft-gray); font-style: italic; max-width: 700px; margin: 0 auto;">
-                "I’m a Full Stack Developer specialized in React, Node.js and WordPress. I build modern, clean and scalable web applications."
-            </p>
-            <br>
-            <a href="#" class="btn-primary">Download CV</a>
-        </section>
-
-        <section class="skills-grid">
-            <div class="skill-card" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;">
-                <div style="background: #1e293b; padding: 20px; border-radius: 10px;">HTML</div>
-                <div style="background: #1e293b; padding: 20px; border-radius: 10px;">CSS</div>
-                <div style="background: #1e293b; padding: 20px; border-radius: 10px;">JS</div>
-                <div style="background: #1e293b; padding: 20px; border-radius: 10px;">REACT</div>
+            <!-- TARJETA IZQUIERDA: Más abajo y hacia el extremo -->
+            <div class="absolute left-4 md:left-10 bottom-32 z-30 hidden lg:block w-64 p-5 rounded-2xl bg-[#1E293B]/60 backdrop-blur-md border border-white/5 -rotate-3 shadow-2xl">
+                <p class="text-[9px] font-bold text-[#8892B0] mb-2 tracking-[0.2em]">RESEÑA DE CLIENTE DE</p>
+                <h4 class="text-md font-bold mb-2">Australia <span class="bg-blue-600/20 text-blue-400 px-1 rounded text-[10px]">AU</span></h4>
+                <p class="text-[11px] text-[#8892B0] leading-relaxed italic">
+                    "Excelente desarrollador web. Comunicación impecable. Muy recomendable."
+                </p>
             </div>
-            <div class="skill-card">
-                <span class="big-number">4</span>
-                <p>Years Experience</p>
-            </div>
-        </section>
 
-        <section class="contact-box">
-            <h2 style="text-align: center;">LET'S HAVE A CHAT</h2>
-            <form>
-                <input type="text" placeholder="JORDAN SANTANDER">
-                <input type="email" placeholder="J.SANTANDERPH@GMAIL.COM">
-                <textarea placeholder="CHAT HERE" rows="4"></textarea>
-                <button type="button" class="btn-primary" style="width: 100%; padding: 20px; margin-top: 20px;">Submit Here</button>
-            </form>
-        </section>
-    </div>
+            <!-- IMAGEN CENTRAL -->
+            <div class="relative z-20 w-full max-w-md flex justify-center">
+                <!-- Imagen con sombra suave -->
+                <img src="/image_47eb3cbb.png" alt="IMAGEN DE JORDAN" class="w-[85%] h-auto object-contain drop-shadow-[0_10px_40px_rgba(0,0,0,0.5)]">
+                
+                <!-- BOTÓN PROYECTOS: Más pequeño y estilizado -->
+                <button class="absolute bottom-8 bg-[#E3FF6A] text-black px-8 py-3 rounded-full text-[10px] font-black tracking-widest uppercase shadow-lg hover:scale-105 transition-transform duration-300">
+                    PROYECTOS
+                </button>
+            </div>
+
+            <!-- TARJETA DERECHA: Más abajo y con barras de progreso finas -->
+            <div class="absolute right-4 md:right-10 bottom-24 z-30 hidden lg:block w-64 p-6 rounded-2xl bg-[#1E293B]/60 backdrop-blur-md border border-white/5 rotate-3 shadow-2xl">
+                <p class="text-[9px] font-bold text-[#8892B0] mb-5 tracking-[0.2em] uppercase">Mis Conocimientos</p>
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex justify-between text-[9px] font-bold mb-1 uppercase"><span>Backend</span><span class="text-[#8892B0]">85%</span></div>
+                        <div class="h-[2px] w-full bg-white/10 rounded-full"><div class="h-full bg-[#E3FF6A] rounded-full" style="width: 85%"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-[9px] font-bold mb-1 uppercase"><span>CMS</span><span class="text-[#8892B0]">70%</span></div>
+                        <div class="h-[2px] w-full bg-white/10 rounded-full"><div class="h-full bg-[#E3FF6A] rounded-full" style="width: 70%"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-[9px] font-bold mb-1 uppercase"><span>Frontend</span><span class="text-[#8892B0]">95%</span></div>
+                        <div class="h-[2px] w-full bg-white/10 rounded-full"><div class="h-full bg-[#E3FF6A] rounded-full" style="width: 95%"></div></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
 
 </body>
 </html>
